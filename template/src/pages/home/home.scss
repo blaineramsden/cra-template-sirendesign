@@ -1,0 +1,95 @@
+@import '../../scss/mixin.scss';
+
+.lower-split {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%; 
+    h1{
+        margin-top: -41px;
+        padding-left: 445px;
+
+        @include small-desktop {
+            bottom: -28px;
+            padding-left: 395px;
+        }
+        @include tablet {
+            bottom: -20px;
+            padding-left: 295px;
+        }
+    }
+}
+
+.home-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0 200px 450px;
+    @include small-desktop {
+        padding: 50px 0 200px 400px;
+    }
+    @include tablet {
+        padding: 50px 0 200px 300px;
+    }
+    @include mobile {
+        padding: 50px 1.5rem 200px 1.5rem;
+    }
+    h3{
+        letter-spacing: 0.1em;
+        padding-bottom: 1rem;
+    }
+    h3{
+        @include mobile {
+            font-size: 32px;
+            max-width: 60%;
+            padding-bottom: 1.5rem;
+        }
+    }
+    h4{
+        @include mobile {
+            font-size: 19px;
+        }
+    }
+    .home-links{
+        padding-top: 1.5rem;
+        a{
+            all: unset;
+            text-decoration: underline;
+            color: $white;
+            cursor: pointer;
+        }
+        h4{
+            padding-top: 15px;
+            @include mobile {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.anim-wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 30%;
+    z-index: -1;
+    @include mobile {
+        width: 50%;
+    }
+    .arrow {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        bottom: 3rem;
+        @include mobile{
+            display: none;
+        }
+    }
+    @include mobile {
+     height: fit-content;
+     padding: 7.5rem 0 5rem 0;
+    }
+}

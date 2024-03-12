@@ -1,0 +1,148 @@
+@import "../../scss/mixin.scss";
+
+
+.building-img {
+    img{
+        height: 85vh;
+        width: 100vw;
+        object-position: 50% 50%;
+        object-fit: cover;
+        @include mobile {
+            width: 100vw;
+            aspect-ratio: 16 / 9;
+            height: auto;
+            
+        }
+        @include tablet {
+            width: 100vw;
+            aspect-ratio: 16 / 9;
+            height: auto;
+        }
+    }
+}
+
+.build-split {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 175px;
+    background-color: $beige;
+    
+    @media (max-width: 1300px) {
+        padding-left: 120px;
+    }
+    @include mobile {
+        padding-left: 0px;
+        flex-direction: column;
+        background: linear-gradient(
+            to right,
+            $light-blue 0%,
+            $light-blue calc(100% - 3rem),
+            $beige calc(100% - 3rem),
+            $beige 100%
+        );
+
+        h1 {
+            padding-left: 80px;
+        }
+    }
+    @include tablet {
+        padding-left: 0px;
+        flex-direction: column;
+        background: linear-gradient(
+            to right,
+            $light-blue 0%,
+            $light-blue calc(100% - 3rem),
+            $beige calc(100% - 3rem),
+            $beige 100%
+            );            
+        h4{
+            width: 80%;
+
+        }
+
+        h1 {
+            padding-left: 100px;
+        }
+    }
+    h1 {
+        padding-right: 3rem;
+        padding-bottom: 3rem;
+        @include mobile {
+            padding-bottom: 1.5rem;
+        }
+        @include tablet {
+            padding-bottom: 1.5rem;
+        }
+    }
+
+    .blue-box {
+        background-color: $light-blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 3rem;
+        padding: 3rem 6rem;
+        width: 50%;
+        @media (max-width: 1350px) {
+            padding: 3rem 3rem;
+        }
+        @include tablet {
+            padding: 0rem 0px 1.5rem 100px;
+            justify-content: flex-start;
+            background: linear-gradient(
+                to right,
+                $light-blue 0%,
+                $light-blue calc(100% - 3rem),
+                $beige calc(100% - 3rem),
+                $beige 100%
+            );
+
+            width: 100%;
+        }
+        @include mobile {
+            padding: 0rem 80px 1.5rem 80px;
+            background: linear-gradient(
+                to right,
+                $light-blue 0%,
+                $light-blue calc(100% - 3rem),
+                $beige calc(100% - 3rem),
+                $beige 100%
+            );
+
+            width: 100%;
+        }
+        @include large-desktop {
+            padding: 3rem 20% 3rem 6rem;
+        }
+    }
+}
+.max-width {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(0, $light-blue 50%, $beige 50%);
+
+}
+
+.building-sub-header {
+    @include padding;
+    padding-top: 3rem;
+    @include mobile {
+        padding-top: 3rem;
+    }
+    h2 {
+        padding-left: 3rem;
+        @include mobile {
+            padding-left: 0;
+        }
+    }
+
+    h2:nth-child(2) {
+        padding-left: 6rem;
+        @include mobile {
+            padding-left: calc(80px - 1.5rem);
+            margin-top: -15px;
+        }
+    }
+}
