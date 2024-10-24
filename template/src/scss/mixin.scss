@@ -9,7 +9,6 @@ $back-gradient: rgba(0, 0, 0, 0.7);
     }
 }
 
-
 @mixin desktop {
     @media (min-width: 1200px) {
         @content;
@@ -33,3 +32,32 @@ $back-gradient: rgba(0, 0, 0, 0.7);
         @content;
     }
 }
+
+h1{
+
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+h4{
+
+}
+
+h5{
+
+}
+
+p{
+
+}
+
+b{
+    font-weight: bold;
+}
+

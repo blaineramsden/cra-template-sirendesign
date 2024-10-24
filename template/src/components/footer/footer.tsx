@@ -1,11 +1,9 @@
 import "./footer.scss";
 
 const Footer: React.FC = () => {
-    return (
-        <>
-            
-        </>
-    );
+    return(
+    <footer></footer>;
+    )
 };
 
 export default Footer;
