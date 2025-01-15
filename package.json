@@ -1,12 +1,12 @@
 {
   "name": "cra-template-sirendesign",
-  "version": "1.0.1",
-  "description": "",
-  "main": "index.js",
+  "version": "2.0.1",
+  "description": "A custom Create React App template for Sirendesign",  
+  "main": "template.json", 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["create-react-app", "template", "sirendesign"], 
   "author": "Blaine Ramsden",
   "license": "ISC"
 }

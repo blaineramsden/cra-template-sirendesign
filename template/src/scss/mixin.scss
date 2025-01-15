@@ -1,8 +1,3 @@
-$beige : #E8C8B2;
-$light-blue: #86A1B2;
-$white: #F4F4F4;
-$back-gradient: rgba(0, 0, 0, 0.7);
-
 @mixin large-desktop {
     @media (min-width: 1500px) {
         @content;
