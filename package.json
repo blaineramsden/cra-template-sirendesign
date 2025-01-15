@@ -1,6 +1,6 @@
 {
   "name": "cra-template-sirendesign",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "A custom Create React App template for Sirendesign",
   "main": "template.json",
   "scripts": {
