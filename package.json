@@ -12,5 +12,8 @@
     "sirendesign"
   ],
   "author": "Blaine Ramsden",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "swiper": "^11.2.1"
+  }
 }
